@@ -1,0 +1,24 @@
+<%- include('partials/header.ejs'); -%> <!--Cabeçalho-->
+    <body>
+        <%- include('partials/navbar.ejs'); -%> <!--Barra de navegação-->
+        <div class="container"> <!--Container-->
+
+            <div class="card" id="formulario-pergunta"> <!--Card-->
+                <div class="card-header">
+                    <h1>Realizar Perguntas</h1>
+                </div>
+                <div class="card-body">
+                    <form method="POST" action="/salvarpergunta"> <!--Utilizando metodo POST para armazenar informação e esconder do usuario a olho nu, precisa criar uma rota para encaminha-lo para algum lugar-->
+                        <label for="">Titulo</label>
+                        <input name="titulo" type="text" placeholder="Titulo" class="form-control">
+                        <br>
+                        <label for="">Descrição</label>
+                        <textarea name="descricao" placeholder="Descreva sua pergunta aqui" class="form-control"></textarea>
+                        <br>
+                        <button class="btn btn-primary btn-sm">Perguntar</button>
+                    </form>
+                </div><!--/Card-->
+            </div> <!--Container-->
+        </div>
+    </body>
+<%- include('partials/footer.ejs'); -%> <!--rodapé-->

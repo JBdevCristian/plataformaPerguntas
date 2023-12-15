@@ -1,0 +1,6 @@
+Partials seria uma duplicação do codigo HTML para um outro sem a necessidade de ficar copiando e colando codigo.
+
+Podendo assim realizar manutelnção futuramente em seus codigos sem mudar um de cada vez.
+
+
+Você pode dividir cada componente do seus site.

@@ -1,0 +1,28 @@
+Passo a passo para iniciar projeto no node
+
+Principais bibiliotecas
+-- EXPRESS - Instalação (npm init)
+-- EJS - Instalação (npm install ejs --save)
+-- BodyParser (npm install body-parser --save)
+-- SEQUELIZE (npm install --save sequelize) - (npm install --savel mysql2)
+
+
+1- No terminal instalar o package NODE (npm init)
+    *Dar nome ao projeto
+    *Autor
+    *Definir arquivo principaal
+
+2- Chamar o express dentro do index.js
+    * varialvel express = require ("express")
+    * Chamar o express variavel app = express(); //iniciando express
+
+3- Chamar o emulador HTML (EJS)
+    *instalar no terminal com o npm install ejs --save
+    *definir a view engine no app variavel.set('view engine', 'ejs')
+
+4- Ferramenta para pegar dados de forms (BodyParser)
+    * Instalar o BodyParser
+    * No terminal usar o npm install body-parser --save
+    * Chamar ele na aplicação variavel.use(bodyParser.urlencoded({extended: false}))
+
+5. Começar o projeto com rotas
